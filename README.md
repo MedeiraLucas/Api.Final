@@ -21,16 +21,16 @@
 O projeto foi estruturado com base em boas práticas e separação de responsabilidades:
 
 /src
-├── config/ # Configurações do projeto (DB, .env, etc.)
-├── controllers/ # Lógica de controle de cada rota
-├── models/ # Entidades do TypeORM/Sequelize (tabelas do banco)
-├── middlewares/ # Autenticação, erros, logs
-├── routes/ # Rotas da API agrupadas por módulo
-├── services/ # Lógica de negócio (se necessário)
-├── docs/ # Documentação Swagger
-├── utils/ # Funções auxiliares (se necessário)
-├── app.js # Inicialização do Express (se necessário)
-└── server.js # Inicialização do servidor
+├── 🛠️ config/ → Configurações gerais (banco de dados, variáveis de ambiente)
+├── 🎮 controllers/ → Lógica das rotas (entrada de dados e respostas)
+├── 🧱 models/ → Modelos de dados (tabelas do banco via ORM)
+├── 🛡️ middlewares/ → Autenticação, tratamento de erros, logs, etc.
+├── 🌐 routes/ → Definição das rotas da API, agrupadas por módulo
+├── 🧠 services/ → Regras de negócio isoladas (opcional)
+├── 📚 docs/ → Documentação da API (Swagger)
+├── 🧰 utils/ → Funções auxiliares reutilizáveis (opcional)
+├── 🚪 app.js → Configuração e carregamento do Express
+└── 🖥️ server.js → Inicialização do servidor HTTP
 
 
 ---
