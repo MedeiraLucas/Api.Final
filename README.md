@@ -2,17 +2,17 @@
 
 ## Tecnologias Utilizadas
 
-| Tecnologia         | Descrição                                      | Necessidade   |
-|--------------------|-----------------------------------------------|---------------|
-| Node.js            | Ambiente de execução de JavaScript no servidor | Obrigatório   |
-| Express.js         | Framework web para APIs RESTful                | Obrigatório   |
-| MySQL              | Banco de dados relacional                      | Obrigatório   |
-| TypeORM/Sequelize  | ORM para abstração e manipulação de dados      | Obrigatório   |
-| bcryptjs           | Criptografia de senhas                         | Obrigatório   |
-| JWT                | Autenticação com tokens seguros                | Obrigatório   |
-| dotenv             | Gerenciamento de variáveis de ambiente         | Opcional      |
-| Swagger            | Documentação interativa da API                 | Obrigatório   |
-| Nodemon            | Reinicialização automática em desenvolvimento  | Opcional      |
+| Tecnologia         | Descrição                                     
+|--------------------|----------------------------------------------- |
+| Node.js            | Ambiente de execução de JavaScript no servidor |
+| Express.js         | Framework web para APIs RESTful                |
+| MySQL              | Banco de dados relacional                      |
+| TypeORM/Sequelize  | ORM para abstração e manipulação de dados      | 
+| bcryptjs           | Criptografia de senhas                         | 
+| JWT                | Autenticação com tokens seguros                | 
+| dotenv             | Gerenciamento de variáveis de ambiente         |
+| Swagger            | Documentação interativa da API                 | 
+| Nodemon            | Reinicialização automática em desenvolvimento  |  
 
 ---
 
