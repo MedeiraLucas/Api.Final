@@ -5,7 +5,7 @@ const Product = require('./product');
 const Order = require('./order');
 const OrderProduct = require('./orderProduct');
 
-// Relacionamento: Um usuário pode ter vários pedidos
+// Relacionamento usuário pode ter vários pedidos
 User.hasMany(Order, { foreignKey: 'userId' });
 Order.belongsTo(User, { foreignKey: 'userId' });
 
@@ -13,7 +13,7 @@ Order.belongsTo(User, { foreignKey: 'userId' });
 Category.hasMany(Product, { foreignKey: 'categoryId' });
 Product.belongsTo(Category, { foreignKey: 'categoryId' });
 
-// Relacionamento N:N entre pedidos e produtos (tabela intermediária: OrderProduct)
+// Relacionamento  entre pedidos e produtos
 Order.belongsToMany(Product, {
   through: OrderProduct,
   foreignKey: 'orderId',

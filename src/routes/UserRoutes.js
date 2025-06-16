@@ -165,7 +165,7 @@ const Usercontroller = require('../controllers/userController');
 router.post('/register', Usercontroller.register);
 router.post('/login', Usercontroller.login);
 
-// Rotas protegidas (exigem token JWT válido)
+// Rotas protegidas exigem token
 router.get('/profile', auth, Usercontroller.getProfile);
 router.put('/profile', auth, Usercontroller.updateProfile);
 router.put('/profile/password', auth, Usercontroller.changePassword);

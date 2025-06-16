@@ -137,7 +137,7 @@ const CategoryController = require('../controllers/CategoryController');
 router.get('/', CategoryController.getAll);
 router.get('/:id', CategoryController.getById);
 
-// Rotas protegidas (exigem token JWT válido)
+// Rotas protegidas exigem token
 router.post('/', auth, CategoryController.create);
 router.put('/:id', auth, CategoryController.update);
 router.delete('/:id', auth, CategoryController.delete);
