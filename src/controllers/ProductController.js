@@ -1,4 +1,3 @@
-// src/controllers/productController.js
 const { Product, OrderProduct } = require('../models');
 
 // Lista todos os produtos cadastrados

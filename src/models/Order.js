@@ -1,4 +1,3 @@
-// models/order.js
 const { db, Sequelize } = require('../config/database');
 const User    = require('./user');
 const Product = require('./product');

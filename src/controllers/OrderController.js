@@ -1,4 +1,3 @@
-// src/controllers/orderController.js
 const { Order, Product, OrderProduct } = require('../models');
 
 // Função para criar um novo pedido

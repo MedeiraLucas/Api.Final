@@ -1,4 +1,3 @@
-// src/controllers/categoryController.js
 const { Category, Product } = require('../models');
 
 // Lista todas as categorias do banco

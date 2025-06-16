@@ -1,5 +1,3 @@
-// src/models/index.js
-
 // Importando os modelos
 const User = require('./user');
 const Category = require('./category');

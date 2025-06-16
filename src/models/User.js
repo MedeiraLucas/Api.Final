@@ -1,4 +1,3 @@
-// src/models/user.js
 const { db, Sequelize } = require('../config/database');
 
 const User = db.define('User', {
