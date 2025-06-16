@@ -20,16 +20,16 @@
 
 O projeto foi estruturado com base em boas práticas e separação de responsabilidades:
 
-/src
-├── 🛠️ config/ → Configurações gerais (banco de dados, variáveis de ambiente)
-├── 🎮 controllers/ → Lógica das rotas (entrada de dados e respostas)
-├── 🧱 models/ → Modelos de dados (tabelas do banco via ORM)
-├── 🛡️ middlewares/ → Autenticação, tratamento de erros, logs, etc.
-├── 🌐 routes/ → Definição das rotas da API, agrupadas por módulo
-├── 🧠 services/ → Regras de negócio isoladas (opcional)
-├── 📚 docs/ → Documentação da API (Swagger)
-├── 🧰 utils/ → Funções auxiliares reutilizáveis (opcional)
-├── 🚪 app.js → Configuração e carregamento do Express
+/src 
+├── 🛠️ config/ → Configurações gerais (banco de dados, variáveis de ambiente) 
+├── 🎮 controllers/ → Lógica das rotas (entrada de dados e respostas) 
+├── 🧱 models/ → Modelos de dados (tabelas do banco via ORM) 
+├── 🛡️ middlewares/ → Autenticação, tratamento de erros, logs, etc. 
+├── 🌐 routes/ → Definição das rotas da API, agrupadas por módulo 
+├── 🧠 services/ → Regras de negócio isoladas (opcional) 
+├── 📚 docs/ → Documentação da API (Swagger) 
+├── 🧰 utils/ → Funções auxiliares reutilizáveis (opcional) 
+├── 🚪 app.js → Configuração e carregamento do Express 
 └── 🖥️ server.js → Inicialização do servidor HTTP
 
 
