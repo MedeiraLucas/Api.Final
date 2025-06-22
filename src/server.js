@@ -7,7 +7,7 @@ const cors = require('cors'); // Permite requisições de outros domínios (ex: 
 const { db } = require('./config/database'); // Conexão com o banco de dados
 const { swaggerUi, swaggerSpec } = require('./swagger'); // Documentação Swagger
 
-// Importação de models (não é necessário usar diretamente aqui, apenas garante o carregamento)
+// Importação de models 
 const { User, Category, Product, Order, OrderProduct } = require('./models');
 
 // Cria a aplicação Express
@@ -29,7 +29,7 @@ const categoryRoutes = require('./routes/CategoryRoutes');
 const productRoutes  = require('./routes/ProductRoutes');
 const orderRoutes    = require('./routes/OrderRoutes');
 
-// Middleware para mostrar o método e a URL de cada requisição no console (debug)
+// Middleware para mostrar o método e a URL de cada requisição
 app.use((req, res, next) => {
   console.log(`${req.method} ${req.url}`);
   next();
@@ -38,7 +38,7 @@ app.use((req, res, next) => {
 // Rota da documentação Swagger
 app.use('/api-rodando', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
-// Rota inicial (teste rápido da API)
+// Rota inicial
 app.get('/', (req, res) => {
   res.send('API Rodando ');
 });
@@ -50,16 +50,15 @@ app.use('/api/products',   productRoutes);
 app.use('/api/orders',     orderRoutes);
 
 // Conecta e sincroniza com o banco de dados
-// OBS: force: true apaga e recria todas as tabelas
 db.sync({ force: true })
   .then(() => {
     console.log('✅ Banco de dados conectado e sincronizado');
 
     // Inicia o servidor na porta definida no .env ou padrão 3000
     app.listen(process.env.PORT || 3000, () => {
-      console.log(`🚀 Servidor rodando na porta ${process.env.PORT || 3000}`);
+      console.log(` Servidor rodando na porta ${process.env.PORT || 3000}`);
     });
   })
   .catch((error) => {
-    console.error('❌ Erro ao conectar com o banco de dados:', error);
+    console.error('Erro ao conectar com o banco de dados:', error);
   });
